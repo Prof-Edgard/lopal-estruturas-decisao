@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroAleatorio = Math.random()*10 + 1;
+        let numeroAleatorioInteiro = Math.floor(numeroAleatorio)
+        //document.write(numeroAleatorioInteiro);
+
+        let resposta = prompt("Digite um número de 1 a 10: ");
+
+        let resultado = (resposta >=1 && resposta <=10) ?
+                            (resposta == numeroAleatorioInteiro) ?
+                                "Parabéns! Você adivinhou!": 
+                                "Você errou! O número que eu pensei era " + 
+                                    numeroAleatorioInteiro + "!" :
+                            "Número inválido."
+
+        document.write(resultado);
+
+        /*if(resposta == numeroAleatorioInteiro){
+            document.write("Parabéns! Você adivinhou!");
+        }else{
+            document.write("Você errou! O número que eu pensei era " + 
+                numeroAleatorioInteiro + "!");
+        }*/
+
+
+
+
+
+    </script>
+</body>
+</html>
